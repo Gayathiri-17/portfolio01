@@ -1,0 +1,208 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+  background: #f4f7fa;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #0d2b3e, #134a66);
+  color: #fff;
+  padding: 30px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* PROFILE PHOTO */
+.myphoto {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #0ef7ff;
+  box-shadow: 0 0 15px rgba(14, 247, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.myphoto:hover {
+  transform: scale(1.05);
+}
+
+.myphoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* INTRO TEXT */
+.intro-text {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #00eaff;
+  letter-spacing: 1.5px;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  color: #cdeeff;
+  margin-top: 5px;
+}
+
+/* Brand initial circle */
+.brand-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: #00eaff;
+  color: #013040;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #0f3c52;
+  padding: 12px 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 10px 18px;
+}
+
+nav ul li a {
+  color: #dff8ff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #00bcd4;
+  color: #012730;
+}
+
+/* MAIN SECTIONS */
+main {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 15px;
+}
+
+section {
+  background: #ffffff;
+  padding: 35px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  border-left: 5px solid #00c7d9;
+}
+
+h2 {
+  color: #007d8b;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* PROJECT LINKS */
+.projects a {
+  color: #007d8b;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.projects a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+/* RESUME BUTTON */
+.resume-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: #00bcd4;
+  color: #fff !important;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.resume-button:hover {
+  background: #009eb2;
+}
+
+/* CONTACT LINKS */
+#contact a {
+  color: #007d8b;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  color: #009eb2;
+}
+
+/* FOOTER */
+footer {
+  background: #0d2b3e;
+  color: #b4d3df;
+  padding: 18px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 650px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .myphoto {
+    width: 140px;
+    height: 140px;
+  }
+}
